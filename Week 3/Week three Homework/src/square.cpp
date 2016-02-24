@@ -16,8 +16,9 @@ void Square::cube() {
     g = ofRandom (0,255);
     b = ofRandom (0,255);
     ofSetColor(r, g, b);
+    ofNoFill();
     
-    ofDrawRectangle(ofGetMouseX()/2, ofGetMouseY()/2,300,400);
+    ofDrawRectangle(ofGetMouseX()/2, ofGetMouseY()/3,300,400);
 
 }
 
@@ -29,9 +30,10 @@ void Square::cuby()  {
     r = ofRandom(0,255);
     g = ofRandom (0,255);
     b = ofRandom (0,255);
-    ofNoFill();
+    ofFill();
     
-    ofDrawSphere(ofGetMouseX()/1, ofGetMouseY()/1,120,100);
+    
+    ofDrawSphere(ofGetMouseX()/1, ofGetMouseY()/1,30,50);
 
 
 }
@@ -46,11 +48,12 @@ void Square::rotate() {
     g = ofRandom (0,255);
     b = ofRandom (0,255);
     ofSetColor(r, g, b);
+    ofFill();
 
     
     
     
-    ofDrawTriangle(300,300,200,100,110,90);
+    ofDrawTriangle(300,400,500,100,110,90);
   
    
     
