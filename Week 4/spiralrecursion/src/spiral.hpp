@@ -17,7 +17,7 @@
 
 class Spiral
 
-{
+ {
 public:
     //properties
     float posX, posY, posX2, posY2;

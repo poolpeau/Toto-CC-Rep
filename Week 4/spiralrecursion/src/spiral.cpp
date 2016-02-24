@@ -26,9 +26,6 @@ void Spiral::setup()
    b = ofRandom (0,255);
  
     ofSetColor(r, g, b);
-   
-  
-    
 
     
 } ;
@@ -40,7 +37,7 @@ void Spiral::draw()
     ofTranslate (ofGetWidth()/2,
                  ofGetHeight()/2);
                  //----
-stripePattern (sin(ofGetElapsedTimef())*50);
+stripePattern (1/tan(ofGetElapsedTimef())*2500);
   
     
     //----
@@ -62,18 +59,19 @@ void Spiral::stripePattern (float x)
     
     r = ofRandom (0,255);
     g =  100;
-    b = ofRandom (0,255);
+    b = ofRandom (180);
     
     ofSetColor(r, g, b);
  
-    ofSetLineWidth(2.0);
+    ofSetLineWidth(6.0);
     
     //ofDrawLine(0,500,0,100);
     for(x=-50; x< ofGetWidth(); x= x+1){
         ofPushMatrix();
         ofTranslate (x*20,0);
-       ofRotate(250.0 * ofGetElapsedTimef() );
-        ofDrawLine(0,-100,0,100);
+        //ofRotate(x/3);
+        ofRotate(170.0 * ofGetElapsedTimef() );
+        ofDrawLine(0,-280,0,280);
         ofPopMatrix();
         
         

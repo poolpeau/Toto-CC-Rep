@@ -5,7 +5,20 @@ void ofApp::setup(){
     
     //Spiral.name == "toto";
     
-    ofBackground(0, 0, 0);
+    ofBackground(0, 0,0);
+   //light.setPosition (400,200,700);
+   // light.enable(); //Enabling light source;
+
+    //light.draw();{
+
+   // ofDrawSphere(1000,1000,1000,1000);
+        
+//};
+    //lightStatic.enable();
+    //lightStatic.setPosition(ofVec3f(200,0,200));
+    //lightStatic.draw();
+ 
+
 
 }
 

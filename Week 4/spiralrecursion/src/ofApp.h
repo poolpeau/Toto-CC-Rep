@@ -24,5 +24,9 @@ class ofApp : public ofBaseApp{
 		void gotMessage(ofMessage msg);
     
     Spiral spiral;
+    ofLight light;
+    ofLight lightStatic; 
+   
+    
 		
 };
